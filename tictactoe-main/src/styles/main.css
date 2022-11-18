@@ -1,0 +1,41 @@
+:root {
+  --information-box: none;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background-color: white;
+}
+
+.game-heading {
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(101, 0, 173);
+
+  font-size: 3rem;
+  font-family: "Nunito", sans-serif;
+}

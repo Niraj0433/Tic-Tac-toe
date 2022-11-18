@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./assets/images/tab-icon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font-family: 'Work Sans', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Roboto Mono', monospace; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: "Nunito", sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'PT Sans', sans-serif; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: 'Source Code Pro', monospace; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="stylesheet" href="./src/styles/board.css" />
+    <link rel="stylesheet" href="./src/styles/game-box.css" />
+    <link rel="stylesheet" href="./src/styles/information-box.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>tictactoe</title>
+  </head>
+  <body>
+    <img
+      id="lpu-logo"
+      style="display: none"
+      src="./src/assets/lpu-logo.png"
+      alt="lpu logo"
+    />
+    <h1 class="game-heading">TIC TAC TOE</h1>
+
+    <div class="tictactoe">
+      <board>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </board>
+
+      <button class="restart" title="Restart game">
+        <i class="fa-solid fa-arrow-rotate-right"></i>
+      </button>
+
+      <section class="message-box" title="Message box">
+        <span style="color: deeppink" class="x-turn">
+          <i class="fa-solid fa-x"></i>'s&nbsp;&nbsp;turn
+        </span>
+      </section>
+
+      <div class="whoIsPlaying">
+        <div class="human">
+          <input name="choice" type="radio" class="choiceHuman" checked />
+          <label
+            style="
+              text-decoration-line: underline;
+              text-decoration-thickness: 1px;
+              text-underline-offset: 4px;
+              text-decoration-color: #c0c0c0;
+            "
+            >Play with Friend</label
+          >
+        </div>
+        <div style="color: #9c9c9c" class="computer">
+          <input name="choice" type="radio" class="choiceComputer" />
+          <label>Play with Computer</label>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social-media">
+        <div class="github social-links">
+          <a href="https://github.com/HABIBUL-RAHMAN/tictactoe">
+            <i class="fa-solid fa-code"></i>
+            <span>Github</span>
+          </a>
+        </div>
+
+        <div class="facebook social-links">
+          <a href="https://www.facebook.com/HabibulRahman.Siliguri/">
+            <i class="fa-brands fa-facebook-square"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+
+        <div class="linkedin social-links">
+          <a href="https://www.linkedin.com/in/habibulrahman/">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+        </div>
+        <div class="twitter social-links">
+          <a href="https://twitter.com/Habibul12752179">
+            <i class="fa-brands fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- personal info (hidden) -->
+    <div style="display: none" class="INFORMATION-BOX">
+      <h1 class="info-heading">SUMMER TRAINING PROJECT</h1>
+
+      <hr
+        style="
+          margin-top: 10px;
+
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgb(0, 0, 0),
+            rgba(0, 0, 0, 0)
+          );
+        "
+      />
+
+      <p class="btech-course-name">School of Computer Science & Engineering</p>
+
+      <p class="college-name">
+        Lovely Professional University, Phagwara, Punjab
+      </p>
+
+      <img
+        id="gfg-logo"
+        src="./src/assets/gfg-new-logo.png"
+        alt="geeksforgeeks logo"
+      />
+      <a
+        title="View Course"
+        target="_blank"
+        href="https://practice.geeksforgeeks.org/courses/dsa-self-paced"
+        target="_blank"
+        class="dsa-course-name"
+      >
+        Data Structures and Algorithms - Self Paced
+      </a>
+
+      <div class="details">
+        <div class="label">
+          <p class="name">Name</p>
+          <p class="section">Section</p>
+          <p class="registration">Registration</p>
+          <p class="email">Email</p>
+          <p class="mobile">Mobile</p>
+        </div>
+
+        <div class="value">
+          <p class="name-value">Habibul Rahman</p>
+          <p class="section-value">K20UD</p>
+          <p class="registration-value">12003976</p>
+          <p class="email-value">hafizhaps.slg@gmail.com</p>
+          <p class="phone-value">+91 9641270186</p>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <div class="github social-links">
+          <a href="https://github.com/HABIBUL-RAHMAN/tictactoe">
+            <i class="fa-solid fa-code"></i>
+            <span>Github</span>
+          </a>
+        </div>
+
+        <div class="facebook social-links">
+          <a href="https://www.facebook.com">
+            <i class="fa-brands fa-facebook-square"></i>
+            <span>Facebook</span>
+          </a>
+        </div>
+
+        <div class="linkedin social-links">
+          <a href="https://www.linkedin.com">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Linkedin</span>
+          </a>
+        </div>
+        <div class="twitter social-links">
+          <a href="https://twitter.com/Niraj0433kumar">
+            <i class="fa-brands fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./src/scripts/main.js"></script>
+  </body>
+</html>
+
+<!-- tip
+  this is how you change values of properties of pseudo elements ::before and ::after
+  const root = document.querySelector(":root");
+  root.style.setProperty('--custom-property-name', 'value')
+-->
